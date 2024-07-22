@@ -13,9 +13,10 @@ class File:
             pass
         return file 
     
-    def append(self, addition, line_break):
+    #editar
+    def append(self, addition):
         with open(self.dir_file, "a") as file:
-            file.write(line_break)
+            file.write("\n")
             file.write(addition)
     
     def append_line(self, linha, addition):
@@ -29,6 +30,22 @@ class File:
         
         with open(self.dir_file, "w") as writer_file:
             writer_file.writelines(all_lines)
+    #ler
+    def read_line(self, linha):
+        with open(self.dir_file, "r") as reader_file:
+            all_lines = reader_file.readlines()
+        
+        if linha - 1 < len(all_lines):
+            return all_lines[linha - 1]
+        else:
+            raise IndexError("A linha que você ta tentando pegar não existe")
+    def line_numbers(self):
+        with open(self.dir_file, "r") as reader_file:
+            all_lines = reader_file.readlines()
+        cont = 0
+        for x in all_lines:
+            cont +=1
+        return cont
 
 if __name__ == "__main__":
     print("bem vindo ao programa")
