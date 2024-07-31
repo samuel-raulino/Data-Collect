@@ -1,25 +1,25 @@
-----identicacao----
-Nome: Samuel da Rosa
-Idade: 16
+----identification----
+Name: Samuel da Rosa
+Age: 16
 CPF: 99999999999
 RG: 999999999
-----identicacao----
-Nome: Maria Fernanda Demengeon
-Idade: 15
+----identification----
+Name: Maria Fernanda Demengeon
+Age: 15
 CPF: 98788998734
 RG: 987543321
-----identicacao----
-Nome: Clara da Rosa Raulino
-Idade: 24
+----identification----
+Name: Clara da Rosa Raulino
+Age: 24
 CPF: 42343245343
 RG: 432432432
-----identicacao----
-Nome: Jesus Cristo
-Idade: 33
+----identification----
+Name: Jesus Cristo
+Age: 33
 CPF: 66666666666
 RG: 232323232
-----identicacao----
-Nome: Racismo Games
-Idade: 99
+----identification----
+Name: Racismo Games
+Age: 99
 CPF: 66666666666
 RG: 666666666
