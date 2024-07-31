@@ -18,7 +18,6 @@ class File:
         with open(self.dir_file, "a") as file:
             file.write("\n")
             file.write(addition)
-    
     def append_line(self, linha, addition):
         with open(self.dir_file, "r") as reader_file:
             all_lines = reader_file.readlines()
@@ -31,6 +30,21 @@ class File:
         with open(self.dir_file, "w") as writer_file:
             writer_file.writelines(all_lines)
     #ler
+    def replace(self, linha, addition):
+        with open(self.dir_file, "r") as reader_file:
+            all_lines = reader_file.readlines()
+        
+        if linha - 1 < len(all_lines):
+            all_lines[linha - 1] = addition + '\n'
+        else:
+            raise IndexError("A linha que você ta tentando adicionar não existe")
+        
+        with open(self.dir_file, "w") as writer_file:
+            writer_file.writelines(all_lines)
+    def all_lines(self):
+        with open(self.dir_file, "r") as file:
+            return file.readlines()
+    
     def read_line(self, linha):
         with open(self.dir_file, "r") as reader_file:
             all_lines = reader_file.readlines()
